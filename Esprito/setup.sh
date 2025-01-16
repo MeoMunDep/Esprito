@@ -30,16 +30,10 @@ fi
 create_default_configs() {
     cat > configs.json << EOL
 {
-    "timeZone": "en-US",
-    "rotateProxy": false,
-    "skipInvalidProxy": false,
-    "proxyRotationInterval": 2,
-    "delayEachAccount": [5, 8],
-    "timeToRestartAllAccounts": 300,
-    "howManyAccountsRunInOneTime": 10,
-    "doTasks": true,
-    "playGames": true,
-    "referralCode": ""
+    "limit": 100,
+    "countdown": 300,
+    "country_time": "en-US",
+    "delayEachAccount": [1, 81]
 }
 EOL
 }
@@ -55,7 +49,7 @@ check_configs() {
 while true; do
     clear
     echo "============================================================================"
-    echo "    name BOT SETUP AND RUN SCRIPT"
+    echo "    Esprito BOT SETUP AND RUN SCRIPT by @MeoMunDep"
     echo "============================================================================"
     echo
     echo "Current directory: $(pwd)"
